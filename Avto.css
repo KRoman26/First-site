@@ -1,0 +1,335 @@
+:root {
+  --color_1: #130e27;
+  --color_2: #c62314;
+}
+@font-face {
+  font-family: Quite Chocolatey;
+  src: url(Quite\ Chocolatey.ttf);
+}
+@font-face {
+  font-family: Alexandria;
+  src: url(Alexandria/Alexandria-VariableFont_wght.ttf);
+}
+body {
+  margin-top: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+h2,
+p {
+  margin: 0;
+}
+.header {
+  width: 1200px;
+  height: 688px;
+  background-image: url(best.webp);
+  margin: 0 auto;
+  padding-right: 105px;
+  padding-left: 84px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  font-family:"Quite Chocolatey";
+  font-size: 84px;
+}
+.nav {
+  width: 505px;
+  height: 15px;
+  font-size: 19px;
+  padding-bottom: 30px;
+  margin-right: 15px;
+  font-family: sans-serif;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 14px;
+  transition: 0.2s;
+}
+.nav a:hover {
+  background-color: var(--color_1);
+  color: #fff;
+  border-radius: 5px;
+}
+.header__text {
+  width: 520px;
+  height: 290px;
+  padding-top: 126px;
+  margin-left: 21px;
+}
+.sell {
+  text-transform: uppercase;
+  font-size: 58px;
+  font-family: "Alexandria";
+  line-height: 81px;
+}
+.sell h2:first-child {
+  color: var(--color_1);
+}
+.sell h2:last-child {
+  color: #fff;
+}
+.header__text p {
+  margin-top: 35px;
+  font-size: 21px;
+  width: 466px;
+  height: 75px;
+  line-height: 27px;
+  color: #fff;
+}
+
+/* -- our_services -- */
+
+.our_services {
+  margin: 0 auto;
+  padding-right: 105px;
+  padding-left: 97px;
+  width: 1200px;
+  height: 482px;
+  background-color: #efefef;
+}
+.our_services__title {
+  display: flex;
+  padding-top: 27px;
+  font-size: 49px;
+  text-transform: uppercase;
+  font-family: "Alexandria";
+}
+.our_services__title span {
+  color: var(--color_2);
+  padding-right: 25px;
+}
+
+.our_services__item {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+  height: 160px;
+}
+.item {
+  width: 165px;
+}
+.icon img {
+  width: 160px;
+  height: 160px;
+}
+
+.icon__text {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* -- our_story -- */
+
+.our_story {
+  margin: 0 auto;
+  padding-right: 105px;
+  padding-left: 97px;
+  width: 1200px;
+  height: 119px;
+  background-color: var(--color_1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our_story__text {
+  width: 610px;
+  height: 85px;
+  color: #fff;
+  font-size: 21px;
+  padding-top: 15px;
+}
+.our_story__button {
+  display: flex;
+  width: 270px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7px;
+  font-family: "Alexandria";
+}
+.our_story__button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 66px;
+  font-size: 23px;
+  border: #fff 1px dashed;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.our_story__button a:hover {
+  background-color: var(--color_2);
+  color: #fff;
+  border-radius: 5px;
+  border: var(--color_2) 1px dotted;
+}
+
+/* -- pricing -- */
+
+.pricing {
+  margin: 0 auto;
+  padding-right: 105px;
+  padding-left: 97px;
+  width: 1200px;
+  height: 614px;
+  background-color: #efefef;
+}
+.pricing__title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Alexandria";
+  text-align: center;
+  padding-top: 46px;
+  margin-left: 13px;
+}
+.pricing__box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 319px;
+  height: 394px;
+  background-color: #fff;
+}
+.point p {
+  font-size: 22px;
+  padding-top: 30px;
+}
+.point li {
+  font-size: 22px;
+}
+.price {
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-family: "Alexandria";
+  color: var(--color_2);
+}
+.offer {
+  width: 200px;
+  height: 155px;
+}
+.offer ul {
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing__button {
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-family: "Alexandria";
+  font-size: 20px;
+}
+.sign_up {
+  text-decoration: none;
+  background-color: var(--color_1);
+  padding: 10px 65px;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.try {
+  text-decoration: none;
+  background-color: var(--color_1);
+  padding: 10px 85px;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.try:hover {
+  background-color: var(--color_2);
+  border-radius: 5px;
+}
+
+.sign_up:hover {
+  background-color: var(--color_2);
+  border-radius: 5px;
+}
+
+/* -- footer -- */
+
+.footer {
+  width: 1200px;
+  height: 188px;
+  background-color: var(--color_1);
+  margin: 0 auto;
+  padding-right: 105px;
+  padding-left: 84px;
+  display: flex;
+  align-items: center;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1011px;
+}
+.footer__rights {
+  color: #fff;
+  font-size: 21px;
+}
+
+.underline-one {
+  text-decoration: none;
+  color: var(--color_2);
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; /* Высота линии */
+  background-color: red; /* Цвет подчеркивания при исчезании линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px; /* Высота линии */
+  background-color: red; /* Цвет подчеркивания при появлении линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+.footer__logo {
+  font-family: "Quite Chocolatey";
+  color: var(--color_2);
+  font-size: 65px;
+}
